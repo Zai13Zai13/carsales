@@ -21,7 +21,7 @@ def user_input_features():
     Curb_weight = st.sidebar.slider('Curb_weight', 1.9, 5.57, 3.0)
     Fuel_capacity = st.sidebar.slider('Fuel_capacity', 10.30, 32.0, 20.0)
     Fuel_efficiency = st.sidebar.slider('Fuel_efficiency', 15.00, 45.0, 20.0)
-    Power_perf_factor = (st.sidebar.slider'Power_perf_factor', 23.27, 188.14, 130.0)
+    Power_perf_factor = st.sidebar.slider('Power_perf_factor', 23.27, 188.14, 130.0)
     Manufacturer_Acura = st.sidebar.slider ('Manufacturer_Acura', 0.0, 1.0, 0.5)
     Manufacturer_Audi = st.sidebar.slider('Manufacturer_Audi', 0.0, 1.0, 0.5)
     Manufacturer_BMW = st.sidebar.slider('Manufacturer_BMW', 0.0, 1.0, 0.5)
