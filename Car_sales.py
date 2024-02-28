@@ -37,7 +37,7 @@ def user_input_features():
     Manufacturer_Jaguar = st.sidebar.slider('Manufacturer_Jaguar', 0.0, 1.0, 0.5) 
     Manufacturer_Jeep = st.sidebar.slider('Manufacturer_Jeep', 0.0, 1.0, 0.5) 
     Manufacturer_Lexus = st.sidebar.slider('Manufacturer_Lexus', 0.0, 1.0, 0.5)
-    Manufacturer_Lincoln = st.sidebar.slider('Manufacturer_Lincoln', 0.0, 1.0, 0.5) 
+    Manufacturer_Lincoln = st.sidebar.slider('Manufacturer_Lincoln', 0.0, 1.0, 0.5)
     Manufacturer_Mercedes-B = st.sidebar.slider('Manufacturer_Mercedes-B', 0.0, 1.0, 0.5)
     Manufacturer_Mercury = st.sidebar.slider('Manufacturer_Mercury', 0.0, 1.0, 0.5) 
     Manufacturer_Mitsubishi = st.sidebar.slider('Manufacturer_Mitsubishi', 0.0, 1.0, 0.5) 
