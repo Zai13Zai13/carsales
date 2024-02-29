@@ -11,6 +11,39 @@ This app predicts the **Car Sales Perfromance** type!
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
+    st.write('The Manufacturers are 0=Acura, 1=Audi, 2=BMW, 3=Buick, 4=Cadillac, 5=Chevrolet,6=Chrysler, 7=Dodge, 8=Ford, 9=Honda, 10=Hyundai, 11=Infiniti,
+12=Jaguar, 13=Jeep, 14=Lexus, 15=Lincoln, 16=Mercedes-B, 17=Mercury,18=Mitsubishi, 19=Nissan, 20=Oldsmobile, 21=Plymouth,
+22=Pontiac,23=Porsche, 24=Saab, 25=Saturn, 26=Subaru, 27=Toyota, 28=Volkswagen,29=Volvo')
+    Manufacturer = st.sidebar.selectbox ('Select the Manufacturer Type',[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 18,
+    17, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29])
+    st.write('The Models are ['79=3-Sep', '143=3000GT', '25=300M', '115=323i', '8=328i', '9=4Runner', '10=5-Sep', '3=528i', '4=A4', '7=A6', '38=A8',
+'121=Accent', '107=Accord', '89=Alero', '51=Altima', '137=Aurora', '58=Avalon', '35=Avenger', '59=Beetle', '36=Bonneville', '92=Boxter', '90=Bravada',
+'97=Breeze', '30=C-Class', '46=C70', '111=CL', '94=CL500', '78=CLK Coupe', '135=CR-V', '134=Cabrio', '42=Camaro', '40=Camry', '83=Caravan', '146=Carrera Cabrio',
+'2=Carrera Coupe', '104=Catera', '17=Cavalier', '141=Celica', '80=Century', '151=Cherokee', '117=Cirrus', '119=Civic', '118=Concorde', '50=Continental',
+'53=Contour', '32=Corolla', '60=Corvette', '101=Cougar', '44=Crown Victoria', '145=Cutlass', '65=Dakota', '48=DeVille', '62=Diamante', '153=Durango',
+'61=E-Class', '120=ES300', '63=Eclipse', '41=Elantra', '12=Eldorado', '28=Escalade', '109=Escort', '105=Expedition', '11=Explorer', '57=F-Series', '140=Firebird',
+'77=Focus', '123=Forester', '154=Frontier', '39=GS300', '74=GS400', '55=GTI', '68=Galant', '69=Golf', '85=Grand Am', '87=Grand Cherokee', '116=Grand Marquis',
+'43=Grand Prix', '147=I30', '103=Impala', '95=Integra', '56=Intrepid', '71=Intrigue', '52=Jetta', '1=LHS', '98=LS', '99=LS400', '102=LW', '47=LX470',
+'133=Land Cruiser', '75=LeSabre', '100=Lumina', '150=M-Class', '23=Malibu', '54=Maxima', '122=Metro', '129=Mirage', '130=Montana', '131=Monte Carlo', '27=Montero',
+'26=Montero Sport', '91=Mountaineer', '136=Mustang', '14=Mystique', '93=Navigator', '113=Neon', '110=Odyssey', '155=Outback', '67=Park Avenue', '49=Passat',
+'81=Passport', '13=Pathfinder', '15=Prizm', '21=Prowler', '139=Quest', '22=RAV4', '152=RL', '112=RX300', '142=Ram Pickup', '73=Ram Van', '64=Ram Wagon', '76=Ranger',
+'19=Regal', '96=S-Class', '20=S-Type', '34=S40', '33=S70', '6=S80', '0=SC', '128=SL', '127=SL-Class', '132=SLK', '86=SLK230', '84=SW', '106=Sable', '66=Sebring Conv.',
+'45=Sebring Coupe', '31=Sentra', '16=Seville', '37=Sienna', '144=Silhouette', '138=Sonata', '114=Stratus', '5=Sunfire', '88=TL', '72=Tacoma', '82=Taurus',
+'108=Town & Country', '29=Town car', '70=V40', '18=V70', '124=Villager', '148=Viper', '125=Voyager', '149=Windstar', '24=Wrangler', '126=Xterra'] ') 
+    Model = st.sidebar.selectbox ('Select the Model Type',[ 79, 143,  25, 115,   8,   9,  10,   3,   4,   7,  38, 121, 107,
+    89,  51, 137,  58,  35,  59,  36,  92,  90,  97,  30,  46, 111,
+    94,  78, 135, 134,  42,  40,  83, 146,   2, 104,  17, 141,  80,
+    151, 117, 119, 118,  50,  53,  32,  60, 101,  44, 145,  65,  48,
+    62, 153,  61, 120,  63,  41,  12,  28, 109, 105,  11,  57, 140,
+    77, 123, 154,  39,  74,  55,  68,  69,  85,  87, 116,  43, 147,
+    103,  95,  56,  71,  52,   1,  98,  99, 102,  47, 133,  75, 100,
+    150,  23,  54, 122, 129, 130, 131,  27,  26,  91, 136,  14,  93,
+    113, 110, 155,  67,  49,  81,  13,  15,  21, 139,  22, 152, 112,
+    142,  73,  64,  76,  19,  96,  20,  34,  33,   6,   0, 128, 127,
+    132,  86,  84, 106,  66,  45,  31,  16,  37, 144, 138, 114,   5,
+    88,  72,  82, 108,  29,  70,  18, 124, 148, 125, 149,  24, 126])
+    st.write('The Vehicles are 1=Car , 0=Passenger)
+    Vehicle_type = st.sidebar.selectbox ('Select the Vehicle Type',[ 1,  0])
     __year_resale_value = st.sidebar.slider('__year_resale_value', 5.16, 67.55, 30.0)
     Price_in_thousands = st.sidebar.slider('Price_in_thousands', 9.24, 85.5, 40.0)
     Engine_size = st.sidebar.slider('Engine_size', 1.0, 8.0, 4.0)
@@ -22,39 +55,12 @@ def user_input_features():
     Fuel_capacity = st.sidebar.slider('Fuel_capacity', 10.30, 32.0, 20.0)
     Fuel_efficiency = st.sidebar.slider('Fuel_efficiency', 15.00, 45.0, 20.0)
     Power_perf_factor = st.sidebar.slider('Power_perf_factor', 23.27, 188.14, 130.0)
-    Manufacturer_Acura = st.sidebar.slider ('Manufacturer_Acura', 0.0, 1.0, 0.5)
-    Manufacturer_Audi = st.sidebar.slider('Manufacturer_Audi', 0.0, 1.0, 0.5)
-    Manufacturer_BMW = st.sidebar.slider('Manufacturer_BMW', 0.0, 1.0, 0.5)
-    Manufacturer_Buick = st.sidebar.slider('Manufacturer_Buick', 0.0, 1.0, 0.5)
-    Manufacturer_Cadillac = st.sidebar.slider('Manufacturer_Cadillac', 0.0, 1.0, 0.5)
-    Manufacturer_Chevrolet = st.sidebar.slider('Manufacturer_Chevrolet', 0.0, 1.0, 0.5)
-    Manufacturer_Chrysler = st.sidebar.slider('Manufacturer_Chrysler', 0.0, 1.0, 0.5)
-    Manufacturer_Dodge = st.sidebar.slider('Manufacturer_Dodge', 0.0, 1.0, 0.5)
-    Manufacturer_Ford = st.sidebar.slider('Manufacturer_Ford', 0.0, 1.0, 0.5)
-    Manufacturer_Honda = st.sidebar.slider('Manufacturer_Honda', 0.0, 1.0, 0.5)
-    Manufacturer_Hyundai = st.sidebar.slider('Manufacturer_Hyundai', 0.0, 1.0, 0.5)
-    Manufacturer_Infiniti = st.sidebar.slider('Manufacturer_Infiniti', 0.0, 1.0, 0.5)
-    Manufacturer_Jaguar = st.sidebar.slider('Manufacturer_Jaguar', 0.0, 1.0, 0.5)
-    Manufacturer_Jeep = st.sidebar.slider('Manufacturer_Jeep', 0.0, 1.0, 0.5)
-    Manufacturer_Lexus = st.sidebar.slider('Manufacturer_Lexus', 0.0, 1.0, 0.5)
-    Manufacturer_Lincoln = st.sidebar.slider('Manufacturer_Lincoln', 0.0, 1.0, 0.5)
-    Manufacturer_Mercedes_B = st.sidebar.slider('Manufacturer_Mercedes_B', 0.0, 1.0, 0.5)
-    Manufacturer_Mercury = st.sidebar.slider('Manufacturer_Mercury', 0.0, 1.0, 0.5)
-    Manufacturer_Mitsubishi = st.sidebar.slider('Manufacturer_Mitsubishi', 0.0, 1.0, 0.5)
-    Manufacturer_Nissan = st.sidebar.slider('Manufacturer_Nissan', 0.0, 1.0, 0.5)
-    Manufacturer_Oldsmobile = st.sidebar.slider('Manufacturer_Oldsmobile', 0.0, 1.0, 0.5)
-    Manufacturer_Plymouth = st.sidebar.slider('Manufacturer_Plymouth', 0.0, 1.0, 0.5)
-    Manufacturer_Pontiac = st.sidebar.slider('Manufacturer_Pontiac', 0.0, 1.0, 0.5)
-    Manufacturer_Porsche = st.sidebar.slider('Manufacturer_Porsche', 0.0, 1.0, 0.5)
-    Manufacturer_Saab = st.sidebar.slider('Manufacturer_Saab', 0.0, 1.0, 0.5)
-    Manufacturer_Saturn = st.sidebar.slider('Manufacturer_Saturn', 0.0, 1.0, 0.5)
-    Manufacturer_Subaru = st.sidebar.slider('Manufacturer_Subaru', 0.0, 1.0, 0.5)
-    Manufacturer_Toyota = st.sidebar.slider('Manufacturer_Toyota', 0.0, 1.0, 0.5)
-    Manufacturer_Volkswagen = st.sidebar.slider('Manufacturer_Volkswagen', 0.0, 1.0, 0.5)
-    Manufacturer_Volvo = st.sidebar.slider('Manufacturer_Volvo', 0.0, 1.0, 0.5)
     Vehicle_type_Car = st.sidebar.slider('Vehicle_type_Car', 0.0, 1.0, 0.5)
     Vehicle_type_Passenger = st.sidebar.slider('Vehicle_type_Passenger', 0.0, 1.0, 0.5)
-    data = {' __year_resale_value':  __year_resale_value,
+    data = {'Manufacturer': Manufacturer,
+            'Model': Model,
+            'Vehicle_type': Vehicle_type,
+            '__year_resale_value':  __year_resale_value,
             'Price_in_thousands': Price_in_thousands,
             'Engine_size': Engine_size,
             'Horsepower': Horsepower,
@@ -64,39 +70,7 @@ def user_input_features():
             'Curb_weight': Curb_weight,
             'Fuel_capacity': Fuel_capacity,
             'Fuel_efficiency': Fuel_efficiency,
-            'Power_perf_factor': Power_perf_factor,
-            'Manufacturer_Acura': Manufacturer_Acura,
-            'Manufacturer_Audi': Manufacturer_Audi,
-            'Manufacturer_BMW': Manufacturer_BMW,
-            'Manufacturer_Buick':Manufacturer_Buick,
-            'Manufacturer_Cadillac' : Manufacturer_Cadillac,
-            'Manufacturer_Chevrolet': Manufacturer_Chevrolet,
-            'Manufacturer_Chrysler': Manufacturer_Chrysler,
-            'Manufacturer_Dodge': Manufacturer_Dodge,
-            'Manufacturer_Ford': Manufacturer_Ford,
-            'Manufacturer_Honda': Manufacturer_Honda,
-            'Manufacturer_Hyundai': Manufacturer_Hyundai,
-            'Manufacturer_Infiniti': Manufacturer_Infiniti,
-            'Manufacturer_Jaguar': Manufacturer_Jaguar,
-            'Manufacturer_Jeep': Manufacturer_Jeep,
-            'Manufacturer_Lexus': Manufacturer_Lexus,
-            'Manufacturer_Lincoln': Manufacturer_Lincoln,
-            'Manufacturer_Mercedes_B': Manufacturer_Mercedes_B,
-            'Manufacturer_Mercury': Manufacturer_Mercury,
-            'Manufacturer_Mitsubishi': Manufacturer_Mitsubishi,
-            'Manufacturer_Nissan': Manufacturer_Nissan,
-            'Manufacturer_Oldsmobile': Manufacturer_Oldsmobile,
-            'Manufacturer_Plymouth': Manufacturer_Plymouth,
-            'Manufacturer_Pontiac': Manufacturer_Pontiac,
-            'Manufacturer_Porsche': Manufacturer_Porsche,
-            'Manufacturer_Saab': Manufacturer_Saab,
-            'Manufacturer_Saturn': Manufacturer_Saturn,
-            'Manufacturer_Subaru': Manufacturer_Subaru,
-            'Manufacturer_Toyota': Manufacturer_Toyota,
-            'Manufacturer_Volkswagen': Manufacturer_Volkswagen,
-            'Manufacturer_Volvo': Manufacturer_Volvo,
-            'Vehicle_type_Car' : Vehicle_type_Car,
-            'Vehicle_type_Passenger': Vehicle_type_Passenger}
+            'Power_perf_factor': Power_perf_factor}
     features = pd.DataFrame(data, index=[0])
     return features
 
