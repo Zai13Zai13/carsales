@@ -28,8 +28,8 @@ def user_input_features():
     132,  86,  84, 106,  66,  45,  31,  16,  37, 144, 138, 114,   5,
     88,  72,  82, 108,  29,  70,  18, 124, 148, 125, 149,  24, 126])
     st.write('The Vehicles are 1=Car , 0=Passenger')
-    Vehicle_type = st.sidebar.selectbox ('Select the Vehicle Type',[ 1,  0])
     Resale_Value = st.sidebar.slider('Resale_Value', 5.16, 67.55, 30.0)
+    Vehicle_type = st.sidebar.selectbox ('Select the Vehicle Type',[ 1,  0])
     Price_in_thousands = st.sidebar.slider('Price_in_thousands', 9.24, 85.5, 40.0)
     Engine_size = st.sidebar.slider('Engine_size', 1.0, 8.0, 4.0)
     Horsepower = st.sidebar.slider('Horsepower', 55.0, 450.0, 300.0)
@@ -42,8 +42,8 @@ def user_input_features():
     Power_perf_factor = st.sidebar.slider('Power_perf_factor', 23.27, 188.14, 130.0)
     data = {'Manufacturer': Manufacturer,
             'Model': Model,
-            'Vehicle_type': Vehicle_type,
             'Resale_Value': Resale_Value,
+            'Vehicle_type': Vehicle_type,
             'Price_in_thousands': Price_in_thousands,
             'Engine_size': Engine_size,
             'Horsepower': Horsepower,
