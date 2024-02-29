@@ -44,7 +44,7 @@ def user_input_features():
        'Silhouette', 'Sonata', 'Stratus', 'Sunfire', 'TL', 'Tacoma',
        'Taurus', 'Town & Country', 'Town car', 'V40', 'V70', 'Villager',
        'Viper', 'Voyager', 'Windstar', 'Wrangler', 'Xterra'])
-    Vehicle_type = st.sidebar.selectbox ('Select the Vehicle Type',[Car,Passenger])
+    Vehicle_type = st.sidebar.selectbox ('Select the Vehicle Type',['Car','Passenger'])
     __year_resale_value = st.sidebar.slider('__year_resale_value', 5.16, 67.55, 30.0)
     Price_in_thousands = st.sidebar.slider('Price_in_thousands', 9.24, 85.5, 40.0)
     Engine_size = st.sidebar.slider('Engine_size', 1.0, 8.0, 4.0)
