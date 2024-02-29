@@ -1,4 +1,4 @@
-%%writefile Car_sales.py
+
 import streamlit as st
 import pandas as pd
 import pickle
