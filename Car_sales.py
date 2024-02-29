@@ -81,7 +81,7 @@ def user_input_features():
             'Manufacturer_Jeep': Manufacturer_Jeep,
             'Manufacturer_Lexus': Manufacturer_Lexus,
             'Manufacturer_Lincoln': Manufacturer_Lincoln,
-            'Manufacturer_Mercedes-B': Manufacturer_Mercedes-B,
+            'Manufacturer_Mercedes_B': Manufacturer_Mercedes_B,
             'Manufacturer_Mercury': Manufacturer_Mercury,
             'Manufacturer_Mitsubishi': Manufacturer_Mitsubishi,
             'Manufacturer_Nissan': Manufacturer_Nissan,
