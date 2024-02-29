@@ -43,7 +43,7 @@ def user_input_features():
     data = {'Manufacturer': Manufacturer,
             'Model': Model,
             'Vehicle_type': Vehicle_type,
-            '__year_resale_value':  __year_resale_value,
+            '__year_resale_value': __year_resale_value,
             'Price_in_thousands': Price_in_thousands,
             'Engine_size': Engine_size,
             'Horsepower': Horsepower,
