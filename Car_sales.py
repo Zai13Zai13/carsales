@@ -11,9 +11,7 @@ This app predicts the **Car Sales Perfromance** type!
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    st.write('The Manufacturers are 0=Acura, 1=Audi, 2=BMW, 3=Buick, 4=Cadillac, 5=Chevrolet,6=Chrysler, 7=Dodge, 8=Ford, 9=Honda, 10=Hyundai, 11=Infiniti,
-    12=Jaguar, 13=Jeep, 14=Lexus, 15=Lincoln, 16=Mercedes-B, 17=Mercury,18=Mitsubishi, 19=Nissan, 20=Oldsmobile, 21=Plymouth,
-    22=Pontiac,23=Porsche, 24=Saab, 25=Saturn, 26=Subaru, 27=Toyota, 28=Volkswagen,29=Volvo')
+    st.write('The Manufacturers are 0=Acura, 1=Audi, 2=BMW, 3=Buick, 4=Cadillac, 5=Chevrolet,6=Chrysler, 7=Dodge, 8=Ford, 9=Honda, 10=Hyundai, 11=Infiniti, 12=Jaguar, 13=Jeep, 14=Lexus, 15=Lincoln, 16=Mercedes-B, 17=Mercury,18=Mitsubishi, 19=Nissan, 20=Oldsmobile, 21=Plymouth,22=Pontiac,23=Porsche, 24=Saab, 25=Saturn, 26=Subaru, 27=Toyota, 28=Volkswagen,29=Volvo')
     Manufacturer = st.sidebar.selectbox ('Select the Manufacturer Type',[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 18,
     17, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29])
     st.write('The Models are ['79=3-Sep', '143=3000GT', '25=300M', '115=323i', '8=328i', '9=4Runner', '10=5-Sep', '3=528i', '4=A4', '7=A6', '38=A8',
