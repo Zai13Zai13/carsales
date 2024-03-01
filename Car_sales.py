@@ -47,7 +47,8 @@ with col3:
 
 This app predicts the **Car Sales Perfromance** type!
 """)
-  st.image('CarSales.png', caption='CAR SALES')
+   
+st.image('CarSales.png', caption='CAR SALES')
 
 data = {'Manufacturer': Manufacturer,
             'Model': Model,
