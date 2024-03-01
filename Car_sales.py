@@ -5,7 +5,6 @@ import pickle
 st.write("""
 # Car Sales Performance
 
-st.image('CarSales.png', caption='CAR SALES')
 
 This app predicts the **Car Sales Perfromance** type!
 """)
