@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-backgroundColor="#F5F5DC"
 
 st.write("""
 # Car Sales Performance
