@@ -8,6 +8,7 @@ st.write("""
 
 This app predicts the **Car Sales Perfromance** type!
 """)
+st.image('CarSales.png', caption='CAR SALES')
 
 st.sidebar.header('User Input Parameters')
 
