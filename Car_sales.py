@@ -2,6 +2,17 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+sidebar_background_color = "#F5F5DC"  # Change this to your desired color code
+custom_css = f"""
+    <style>
+        .sidebar {{
+            background-color: {sidebar_background_color};
+        }}
+    </style>
+"""
+
+# Inject the custom CSS
+st.markdown(custom_css, unsafe_allow_html=True)
 st.write("""
 # Car Sales Performance
 
