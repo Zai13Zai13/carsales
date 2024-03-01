@@ -7,9 +7,9 @@ col1, col2, col3 = st.columns(3)
 with col1:
    st.header("User Input Parameters")
    def user_input_features(): 
-      Manufacturer = st.sidebar.selectbox ('Select the Manufacturer Type',[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 18,
+      Manufacturer = st.selectbox ('Select the Manufacturer Type',[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 18,
       17, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29])
-      Model = st.sidebar.selectbox ('Select the Model Type',[ 79, 143,  25, 115,   8,   9,  10,   3,   4,   7,  38, 121, 107,
+      Model = st.selectbox ('Select the Model Type',[ 79, 143,  25, 115,   8,   9,  10,   3,   4,   7,  38, 121, 107,
       89,  51, 137,  58,  35,  59,  36,  92,  90,  97,  30,  46, 111,
       94,  78, 135, 134,  42,  40,  83, 146,   2, 104,  17, 141,  80,
       151, 117, 119, 118,  50,  53,  32,  60, 101,  44, 145,  65,  48,
@@ -21,18 +21,18 @@ with col1:
       142,  73,  64,  76,  19,  96,  20,  34,  33,   6,   0, 128, 127,
       132,  86,  84, 106,  66,  45,  31,  16,  37, 144, 138, 114,   5,
       88,  72,  82, 108,  29,  70,  18, 124, 148, 125, 149,  24, 126])
-      Resale_Value = st.sidebar.slider('Resale_Value', 5.16, 67.55, 30.0)
-      Vehicle_type = st.sidebar.selectbox ('Select the Vehicle Type',[ 1,  0])
-      Price_in_thousands = st.sidebar.slider('Price_in_thousands', 9.24, 85.5, 40.0)
-      Engine_size = st.sidebar.slider('Engine_size', 1.0, 8.0, 4.0)
-      Horsepower = st.sidebar.slider('Horsepower', 55.0, 450.0, 300.0)
-      Wheelbase = st.sidebar.slider('Wheelbase', 92.6, 138.70, 100.0)
-      Width = st.sidebar.slider('Width', 62.60, 79.90, 68.0)
-      Length = st.sidebar.slider('Length', 149.4, 224.5, 200.0)
-      Curb_weight = st.sidebar.slider('Curb_weight', 1.9, 5.57, 3.0)
-      Fuel_capacity = st.sidebar.slider('Fuel_capacity', 10.30, 32.0, 20.0)
-      Fuel_efficiency = st.sidebar.slider('Fuel_efficiency', 15.00, 45.0, 20.0)
-      Power_perf_factor = st.sidebar.slider('Power_perf_factor', 23.27, 188.14, 130.0)
+      Resale_Value = st.slider('Resale_Value', 5.16, 67.55, 30.0)
+      Vehicle_type = st.selectbox ('Select the Vehicle Type',[ 1,  0])
+      Price_in_thousands = st.slider('Price_in_thousands', 9.24, 85.5, 40.0)
+      Engine_size = st.slider('Engine_size', 1.0, 8.0, 4.0)
+      Horsepower = st.slider('Horsepower', 55.0, 450.0, 300.0)
+      Wheelbase = st.slider('Wheelbase', 92.6, 138.70, 100.0)
+      Width = st.slider('Width', 62.60, 79.90, 68.0)
+      Length = st.slider('Length', 149.4, 224.5, 200.0)
+      Curb_weight = st.slider('Curb_weight', 1.9, 5.57, 3.0)
+      Fuel_capacity = st.slider('Fuel_capacity', 10.30, 32.0, 20.0)
+      Fuel_efficiency = st.slider('Fuel_efficiency', 15.00, 45.0, 20.0)
+      Power_perf_factor = st.slider('Power_perf_factor', 23.27, 188.14, 130.0)
       return Manufacturer, Model, Resale_Value, Vehicle_type, Price_in_thousands, Engine_size, Horsepower, Wheelbase, Width, Length, Curb_weight, Fuel_capacity, Fuel_efficiency, Power_perf_factor
 
 with col2:
