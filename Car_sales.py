@@ -2,11 +2,10 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-background_color = "#E3CF57"  # Change this to your desired color code
 custom_css = f"""
     <style>
         body {{
-            background-color: {background_color};
+            background-color: {"#E3CF57"};
         }}
     </style>
 """
