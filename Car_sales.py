@@ -2,17 +2,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-custom_css = f"""
-    <style>
-        body {{
-            background-color: {"#E3CF57"};
-        }}
-    </style>
-"""
-
-# Inject the custom CSS
-st.markdown(custom_css, unsafe_allow_html=True)
-
 st.write("""
 # Car Sales Performance
 
